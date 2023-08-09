@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre entrega Ezequiel Luzardo Curso JS</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <h1>Ezequiel Luzardo Primera Pre entrega</h1>
+    <h2>Curso JS - CODERHOUSE - Prof. Martiniano Weber - Tutor. Tomas Pugnaloni</h2>
+    <div class="botones">
+        <button onclick="loadScript('./quenumeroes.js')"> Que numero es?</button>
+        <button onclick="loadScript('./simulador_interactivo.js')">Simulador interactivo</button>
+    </div>
+    <script>
+        function loadScript(scriptName) {
+            const script = document.createElement('script');
+            script.src = scriptName;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
